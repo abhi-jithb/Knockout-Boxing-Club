@@ -1,6 +1,6 @@
 export default function Footer(){
     return(
-        <footer>
+        <footer className="border-t py-6 text-center">
             <p>© 2026 Knockout Boxing Club</p>
         </footer>
     )
