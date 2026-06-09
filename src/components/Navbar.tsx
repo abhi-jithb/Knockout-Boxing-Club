@@ -1,7 +1,4 @@
-import About from '@/app/about/page'
-import Programs from '@/app/programs/page'
-import Trainers from '@/app/trainers/page'
-import Contact from '@/app/contact/page'
+import Link from "next/link"
 
 export default function Navbar(){
     return(
@@ -9,10 +6,10 @@ export default function Navbar(){
             <h1 className="text-2xl font-bold">Knockout Boxing Club</h1>
 
             <ul className="flex gap-6">
-                <li>Home</li>
-                <li>Programs</li>
-                <li>Trainers</li>
-                <li>Contact</li>
+                <li><Link href="/">Home</Link></li>
+                <li><Link href="/programs">Programs</Link></li>
+                <li><Link href="/trainers">Trainers</Link></li>
+                <li><Link href="/contact">Contact</Link></li>
             </ul>
 
         </nav>   
