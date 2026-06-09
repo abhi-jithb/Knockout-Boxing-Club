@@ -32,27 +32,40 @@ export default function Home(){
       />
 
       <section className= "py-16">
-        <h2 className='text-4xl font-bold '>
+        <h2 className='text-4xl font-bold text-center mb-8 '>
           Our Trainers
         </h2>
 
-        <TrainerCard 
-          name='Onomastus'
-          speciality='Fisrt Boxer'
-        />
+        <div className='grid md:grid-col-3 gap-6 px-8'>
 
-        <TrainerCard 
-          name='Hawa Singh'
-          speciality='Father of Indian Boxing'
-        />
+          <TrainerCard 
+              name='Mamoru Takamura'
+              speciality='WBC World Middleweight Champion'
+              image="/trainers/trainer1.jpg"
+            />
+              
+            <TrainerCard 
+              name='Ippo Makunouchi'
+              speciality='Japanese Featherweight Champion'
+              image="/trainers/trainer2.jpg"
+            />
+              
+            <TrainerCard 
+              name='Takeshi Sendo'
+              speciality='Former Japanese Featherweight Champion'
+              image="/trainers/trainer3.jpg"
+            />
+              
+            <TrainerCard 
+              name='Ricardo Martinez'
+              speciality='Undisputed World Featherweight Champion'
+              image="/trainers/trainer4.jpg"
+            />
 
-        <TrainerCard 
-          name='Muhammed Ali'
-          speciality='Considered as the greatest'
-        />
+        </div>
 
       </section>
-      
+
       <Footer />
     </>
   )
