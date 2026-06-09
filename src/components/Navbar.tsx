@@ -1,3 +1,8 @@
+import About from '@/app/about/page'
+import Programs from '@/app/programs/page'
+import Trainers from '@/app/trainers/page'
+import Contact from '@/app/contact/page'
+
 export default function Navbar(){
     return(
         <nav className="flex justify-between items-center px-8 py-4 border-b">
