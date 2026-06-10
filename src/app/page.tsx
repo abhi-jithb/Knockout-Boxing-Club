@@ -1,6 +1,4 @@
-import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
-import Navbar from '@/components/Navbar'
 import ProgramCards from '@/components/ProgramCards'
 import Section from "@/components/Section"
 import TrainerCard from '@/components/TrainerCard'
@@ -31,8 +29,6 @@ const trainers = [
 export default function Home(){
   return(
     <>
-      <Navbar/>
-
       <Hero />
 
       <Section 
@@ -105,8 +101,6 @@ export default function Home(){
             price={12000}
           />
       </section>
-
-      <Footer />
     </>
   )
 }
