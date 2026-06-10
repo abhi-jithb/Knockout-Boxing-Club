@@ -1,6 +1,6 @@
 export default function Trainers(){
     return(
-        <section className="min-h-[100vh]">
+        <section>
             <h2>Trainers Page </h2>
         </section>
     )
