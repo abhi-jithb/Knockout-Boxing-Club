@@ -2,7 +2,7 @@ type ProgramCardsProps = {
     title: string;
     duration: string;
     description: string;
-    price: string;
+    price: number;
 }
 
 export default function ProgramCards({title, duration, description, price}: ProgramCardsProps){

@@ -5,6 +5,29 @@ import ProgramCards from '@/components/ProgramCards'
 import Section from "@/components/Section"
 import TrainerCard from '@/components/TrainerCard'
 
+const trainers = [
+  {
+    name: "Mamoru Takamura",
+    speciality: "WBC World Middleweight Champion",
+    image: "/trainers/trainer1.jpg",
+  },
+  {
+    name: "Ippo Makunouchi",
+    speciality: "Japanese Featherweight Champion",
+    image: "/trainers/trainer2.jpg",
+  },
+  {
+    name: "Takeshi Sendo",
+    speciality: "Former Japanese Featherweight Champion",
+    image: "/trainers/trainer3.jpg",
+  },
+  {
+    name: "Ricardo Martinez",
+    speciality: "Undisputed World Featherweight Champion",
+    image: "/trainers/trainer4.jpg",
+  },
+];
+
 export default function Home(){
   return(
     <>
@@ -38,62 +61,48 @@ export default function Home(){
         </h2>
 
         <div className='grid md:grid-col-3 gap-6 px-8'>
-
-          <TrainerCard 
-              name='Mamoru Takamura'
-              speciality='WBC World Middleweight Champion'
-              image="/trainers/trainer1.jpg"
+          {trainers.map((trainer) => (
+            <TrainerCard
+              key={trainer.name}
+              name={trainer.name}
+              speciality={trainer.speciality}
+              image={trainer.image}
             />
-
-            <TrainerCard 
-              name='Ippo Makunouchi'
-              speciality='Japanese Featherweight Champion'
-              image="/trainers/trainer2.jpg"
-            />
-
-            <TrainerCard 
-              name='Takeshi Sendo'
-              speciality='Former Japanese Featherweight Champion'
-              image="/trainers/trainer3.jpg"
-            />
-
-            <TrainerCard 
-              name='Ricardo Martinez'
-              speciality='Undisputed World Featherweight Champion'
-              image="/trainers/trainer4.jpg"
-            />
-
+          ))}
         </div>
-
       </section>
 
-      <section>
+      <section className='py-16'>
+        <h2 className='text-4xl font-bold text-center mb-8'>
+          Training Programs
+        </h2>
+
           <ProgramCards 
             title='1 Week Program'
             duration='3 week'
             description='oru aazhcha boxing padikam'
-            price='3000'
+            price={3000}
           />
 
           <ProgramCards 
             title='4 Week Program'
             duration='4 week'
             description='4 aazhcha boxing padikam'
-            price='5000'
+            price={5000}
           />
 
           <ProgramCards 
             title='6 Week Program'
             duration='6 week'
             description='6 aazhcha boxing padikam'
-            price='7000'
+            price={7000}
           />
 
           <ProgramCards 
             title='8 Week Program'
             duration='8 week'
             description='8 aazhcha boxing padikam'
-            price='12000'
+            price={12000}
           />
       </section>
 
